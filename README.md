@@ -1,5 +1,5 @@
 <h1 align="center">Shopping Cart API</h1>
-<p align="center">Testes realizados em RestAssured e relatórios utilizando Allure. Teste da API: http://5d9cc58566d00400145c9ed4.mockapi.io/shopping_cart</p>
+<p align="center">Testes realizados em RestAssured com a linguagem Java e relatórios utilizando Allure. Teste da API: http://5d9cc58566d00400145c9ed4.mockapi.io/shopping_cart</p>
 
 
 <h2 align="center">Pré requisitos</h2>
