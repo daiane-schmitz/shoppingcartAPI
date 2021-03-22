@@ -1,0 +1,184 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "shopping_cart": 1,
+      "sku": [
+        "demo_2",
+        "demo_1",
+        "demo_7"
+      ],
+      "color": [
+        "Black",
+        "Orange",
+        "Yellow"
+      ],
+      "size": [
+        "S",
+        "S",
+        "S"
+      ],
+      "price": [
+        "27.00",
+        "16.51",
+        "16.40"
+      ],
+      "total_shipping": "2.00"
+    }
+  ],
+  "required": [
+    "shopping_cart",
+    "sku",
+    "color",
+    "size",
+    "price",
+    "total_shipping"
+  ],
+  "properties": {
+    "shopping_cart": {
+      "$id": "#/properties/shopping_cart",
+      "type": "integer",
+      "title": "The shopping_cart schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "sku": {
+      "$id": "#/properties/sku",
+      "type": "array",
+      "title": "The sku schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          "demo_2",
+          "demo_1"
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/sku/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/sku/items/anyOf/0",
+            "type": "string",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "demo_2",
+              "demo_1"
+            ]
+          }
+        ]
+      }
+    },
+    "color": {
+      "$id": "#/properties/color",
+      "type": "array",
+      "title": "The color schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          "Black",
+          "Orange"
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/color/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/color/items/anyOf/0",
+            "type": "string",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "Black",
+              "Orange"
+            ]
+          }
+        ]
+      }
+    },
+    "size": {
+      "$id": "#/properties/size",
+      "type": "array",
+      "title": "The size schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          "S",
+          "S"
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/size/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/size/items/anyOf/0",
+            "type": "string",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "S"
+            ]
+          }
+        ]
+      }
+    },
+    "price": {
+      "$id": "#/properties/price",
+      "type": "array",
+      "title": "The price schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          "27.00",
+          "16.51"
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/price/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/price/items/anyOf/0",
+            "type": "string",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "27.00",
+              "16.51"
+            ]
+          }
+        ]
+      }
+    },
+    "total_shipping": {
+      "$id": "#/properties/total_shipping",
+      "type": "string",
+      "title": "The total_shipping schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "2.00"
+      ]
+    }
+  },
+  "additionalProperties": true
+}
