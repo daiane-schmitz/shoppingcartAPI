@@ -14,3 +14,11 @@
  <p> Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')</p>
 <p>Após, executar o comando para baixar o Allure:</p>
   <p>scoop install allure</p>
+  
+<h2 align="center">Rodando os testes e gerando relatórios</h2>
+
+<p> Para rodar os testes após todas as configurações e estar com o projeto aberto no seu IntelliJ seguir a rota:
+ src/test/java/tests/SetupTest.java</p>
+<p>Com o SetupTest aberto, clicar em Run para que os testes executem automaticamente.</p>
+<p> Para executar o teste com o comando maven. Ir no IntelliJ e configurações e adicionar no command line “clean test” e clicar em OK e RUN (botão verde de execução).</p>
+<p> Para executar o relatório Allure escrever o comando: <b>allure serve </b> no terminal.
