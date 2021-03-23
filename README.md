@@ -14,6 +14,3 @@
  <p> Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')</p>
 <p>Após, executar o comando para baixar o Allure:</p>
   <p>scoop install allure</p>
-  
-<h2 align="center">Rodando os testes e gerando relatórios</h2>
-
